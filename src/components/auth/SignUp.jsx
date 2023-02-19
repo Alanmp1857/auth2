@@ -20,8 +20,12 @@ const SignUp = () => {
         <div className='container'>
             <form onSubmit={signUp}>
                 <h1>Create Account</h1>
-                <input type="email" placeholder='Enter your email' value={email} onChange={(e) => setEmail(e.target.value)} />
-                <input type="password" placeholder='Enter your password' value={password} onChange={(e) => setPassword(e.target.value)} />
+                <div>
+                    <input type="email" placeholder='Enter your email' value={email} onChange={(e) => setEmail(e.target.value)} />
+                </div>
+                <div>
+                    <input type="password" placeholder='Enter your password' value={password} onChange={(e) => setPassword(e.target.value)} />
+                </div>
                 <button type='submit'>Sign Up</button>
             </form>
         </div>

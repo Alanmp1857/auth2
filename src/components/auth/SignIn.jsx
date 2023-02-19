@@ -20,8 +20,12 @@ const SignIn = () => {
         <div className='container'>
             <form onSubmit={signIn}>
                 <h1>Log In to your Account</h1>
-                <input type="email" placeholder='Enter your email' value={email} onChange={(e) => setEmail(e.target.value)} />
-                <input type="password" placeholder='Enter your password' value={password} onChange={(e) => setPassword(e.target.value)} />
+                <div className='m-2'>
+                    <input type="email" placeholder='Enter your email' value={email} onChange={(e) => setEmail(e.target.value)} />
+                </div>
+                <div className='mt-20'>
+                    <input type="password" placeholder='Enter your password' value={password} onChange={(e) => setPassword(e.target.value)} />
+                </div>
                 <button type='submit'>Log In</button>
             </form>
         </div>
